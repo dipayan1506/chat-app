@@ -7,7 +7,11 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <BrowserRouter>
+  {/* <AuthContext.Provider> */}
   <App />
+
+  {/* </AuthContext.Provider> */}
+
   </BrowserRouter>
    
   </React.StrictMode>,

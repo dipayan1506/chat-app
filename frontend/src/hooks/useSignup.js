@@ -22,13 +22,14 @@ const useSignup = () => {
 			if (data.error) {
 				throw new Error(data.error);
 			}
-			// localStorage.setItem("chat-user", JSON.stringify(data));
+			localStorage.setItem("chat-user", JSON.stringify(data));
 			// setAuthUser(data);
       
       // const data= await res.json();
       console.log(data);
 		} catch (error) {
 			toast.error(error.message);
+      console.log(error.message);
 		} finally {
 			setLoading(false);
 		}

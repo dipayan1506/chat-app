@@ -9,7 +9,7 @@ const SignUp = () => {
 		username: "",
 		password: "",
 		confirmPassword: "",
-		gender: "",
+		gender: ""
 	});
 
 	const { loading, signup } = useSignup();
@@ -21,6 +21,8 @@ const SignUp = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		await signup(inputs);
+		// console.log(inputs);
+
 	};
 
 	return (
