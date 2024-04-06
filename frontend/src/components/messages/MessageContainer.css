@@ -1,0 +1,19 @@
+.message-container {
+	/* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/dark-bg.png"); */
+	background-image: url('/dark-bg.png'); 
+	/* background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; */
+	background-size: cover;
+	background-position: center;
+	overflow-y: auto; /* Ensure scrollbar is visible */
+	position: relative;
+    /* background-color: red; */
+}
+
+.message-container .message-input {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+  }
